@@ -4,19 +4,19 @@ import { FaBars } from "react-icons/fa";
 import { IoClose } from "react-icons/io5";
 import { useState } from 'react';
 export default function Navbar() {
-    const [nav,setNav]=useState(true)
+    const [nav,setNav]=useState(false)
     const openNav=()=>{
         setNav(!nav)
     }
   return (
-    <div>
+    <div className='bg-[#ABAAF3]'>
       <div className="my-[28px] p-4">
         <div className="flex max-w-[1800px] mx-auto justify-between items-center">
-          <div className="flex items-center gap-8">
+          <div className="flex items-center gap-20">
             <div className="cursor-pointer">
               <Logo/>
             </div>
-            <ul className="md:flex hidden items-center text-[#322460] text-[14px] font-semibold gap-[20px]">
+            <ul className="md:flex hidden items-center text-[#322460] text-[16px] font-semibold gap-[20px]">
               <li>
                 <a href="">NASIL ÇALIŞILIR</a>
               </li>
@@ -46,7 +46,7 @@ export default function Navbar() {
               nav ? 'translate-x-0' : '-translate-x-full'
             } transition-transform ease-in-out duration-300`}
           >
-            <div>
+            <div className='p-2'>
                 <Logo/>
             </div>
             <div className="flex justify-end p-4">
@@ -65,8 +65,8 @@ export default function Navbar() {
               <li>
                 <a href="">S.S.S</a>
               </li>{" "}
-              <li className="flex items-center gap-1">
-                <a href="">TESTLER</a>
+              <li className="flex mx-auto items-center gap-1">
+                <a href="" className=''>TESTLER</a>
                 <span className="rounded-lg text-xs mt-3 px-1 bg-[#e8E9FD]">Yeni</span>
               </li>
               <button className="text-[#322460] py-[13px] px-[26px] font-bold text-[1rem]">GİRİŞ YAP</button>
