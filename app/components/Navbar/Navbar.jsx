@@ -49,7 +49,7 @@ export default function Navbar() {
             <div className='p-2'>
                 <Logo/>
             </div>
-            <div className="flex justify-end p-4">
+            <div className="flex justify-end p-8 xs:p-4">
               <IoClose onClick={openNav} size={30} className="cursor-pointer" />
             </div>
             <ul className="flex flex-col h-screen pb-20 justify-center   items-center text-[#322460] text-[14px] font-semibold gap-[20px]">

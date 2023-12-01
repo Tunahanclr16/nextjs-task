@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function Hero() {
   return (
-   <div className='bg-[#ABAAF3]'>
+   <div className='bg-[#ABAAF3] -mt-1'>
      <div className="flex items-center  md:flex-row flex-col  max-w-[1200px] mx-auto justify-center">
       <div className='flex flex-col md:p-2'>
         <h2 className="text-black md:text-left text-center mx-auto md:mx-0  font-semibold text-3xl lg:text-7xl  md:text-6xl md:leading-[82px] mt-4 md:w-[600px]">Online terapi ile değişimi başlat! </h2>

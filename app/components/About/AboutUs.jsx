@@ -1,20 +1,20 @@
 import Image from "next/image";
 export default function AboutUs() {
   return (
-    <div className="bg-[#4344e5] md:h-[1100px]  sm:h-[1850px] ">
+    <div className="bg-[#4344e5] md:h-[1100px]  sm:h-[16s50px] ">
       <h4 className="text-white font-bold text-[20px] pt-[60px] text-center">
         Bizim hakkımızda biraz
       </h4>
-      <h2 className="text-white text-[42px] leading-10  sm:leading-normal sm:text-[60px] text-center">
+      <h2 className="text-white text-[42px] leading-10 sm:leading-normal sm:text-[60px] text-center">
         yapmayı seviyoruz
       </h2>
       <p className="text-white text-center text-xs font-light mt-[20px] text-[14px] sm:text-[16px]">
         Tarafından resimler{" "}
         <span className="underline cursor-pointer">Freepik</span>
       </p>
-      <div className="max-w-[1140px] mx-auto grid gap-2 md:gap-3 mt-[72px] sm:grid-cols-3 grid-cols-1 xs:grid-cols-2 md:grid-cols-4 items-center place-items-center">
+      <div className="max-w-[1140px] mx-auto grid gap-2 md:gap-3 mt-[72px] xs:grid-cols-2 sm:grid-cols-3 md:grid-cols-4 items-center place-items-center">
         <div className="bg-white h-[350px] rounded-b-3xl w-[250px]">
-          <div className="w-full h-2 bg-orange-500"></div>
+          <div className="sw-full h-2 bg-orange-500"></div>
           <Image
             src="https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/1a5ab7d4a85a55df9eaccc2b/111.jpg"
             width={202}
@@ -22,7 +22,7 @@ export default function AboutUs() {
             alt="Image"
             className="mx-auto object-cover flex justify-center items-center"
           />
-          <h4 class="font-semibold text-[22px] mt-[15px] text-center">
+          <h4 className="font-semibold text-[22px] mt-[15px] text-center">
                 ANALITIK            
           </h4>
           <div className="mx-auto text-center mt-[28px] border-b border-black w-28">
@@ -40,7 +40,7 @@ export default function AboutUs() {
             alt="Image"
             className="mx-auto object-cover flex justify-center items-center"
           />
-          <h4 class="font-semibold text-[22px] mt-[15px] text-center">
+          <h4 className="font-semibold text-[22px] mt-[15px] text-center">
             WEB TASARIM
           </h4>
           <div className="mx-auto text-center mt-[28px] border-b border-black w-28">
@@ -57,7 +57,7 @@ export default function AboutUs() {
             alt="Image"
             className="mx-auto object-cover flex justify-center items-center"
           />
-          <h4 class="font-semibold text-[22px] mt-[15px] text-center">
+          <h4 className="font-semibold text-[22px] mt-[15px] text-center">
             ANALITIK
           </h4>
           <div className="mx-auto text-center mt-[28px] border-b border-black w-28">
@@ -74,7 +74,7 @@ export default function AboutUs() {
             alt="Image"
             className="mx-auto object-cover flex justify-center items-center"
           />
-          <h4 class="font-semibold text-[22px] mt-[15px] text-center">
+          <h4 className="font-semibold text-[22px] mt-[15px] text-center">
             BAŞVURU
           </h4>
           <div className="mx-auto text-center mt-[28px] border-b border-black w-28">
@@ -91,7 +91,7 @@ export default function AboutUs() {
             alt="Image"
             className="mx-auto object-cover flex justify-center items-center"
           />
-          <h4 class="font-semibold text-[22px] mt-[15px] text-center">
+          <h4 className="font-semibold text-[22px] mt-[15px] text-center">
             İLETİŞİM
           </h4>
           <div className="mx-auto text-center mt-[28px] border-b border-black w-28">
@@ -108,7 +108,7 @@ export default function AboutUs() {
             alt="Image"
             className="mx-auto object-cover flex justify-center items-center"
           />
-          <h4 class="font-semibold text-[22px] mt-[15px] text-center">
+          <h4 className="font-semibold text-[22px] mt-[15px] text-center">
             PAZARLAMA
           </h4>
           <div className="mx-auto text-center mt-[28px] border-b border-black w-28">
@@ -125,7 +125,7 @@ export default function AboutUs() {
             alt="Image"
             className="mx-auto object-cover flex justify-center items-center"
           />
-          <h4 class="font-semibold text-[22px] mt-[15px] text-center">
+          <h4 className="font-semibold text-[22px] mt-[15px] text-center">
             STRATEJİ
           </h4>
           <div className="mx-auto text-center mt-[28px] border-b border-black w-28">
@@ -142,7 +142,7 @@ export default function AboutUs() {
             alt="Image"
             className="mx-auto object-cover flex justify-center items-center"
           />
-          <h4 class="font-semibold text-[22px] mt-[15px] text-center">
+          <h4 className="font-semibold text-[22px] mt-[15px] text-center">
             DESTEK
           </h4>
           <div className="mx-auto text-center mt-[28px] border-b border-black w-28">

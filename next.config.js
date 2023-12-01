@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     images: {
-        domains: ['www.psikologofisi.com', 'terapizone.com','images01.nicepagecdn.com']
+        domains: ['api.hidoctor.health', 'www.psikologofisi.com', 'terapizone.com','images01.nicepagecdn.com']
     }
 };
 
