@@ -18,9 +18,8 @@ export default function Hero() {
           alt="Slider Image"
           width={1200}
           height={1200}
-          className='mx-auto  '
-          objectFit="cover"
-        />
+          className='mx-auto object-cover '
+/>
       </div>
     </div>
    </div>
