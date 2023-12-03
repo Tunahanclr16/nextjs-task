@@ -2,7 +2,9 @@
 import Logo from './Logo'
 import { FaBars } from "react-icons/fa";
 import { IoClose } from "react-icons/io5";
+import { TfiWorld } from "react-icons/tfi";
 import { useState } from 'react';
+import { FaChevronDown } from "react-icons/fa";
 export default function Navbar() {
     const [nav,setNav]=useState(false)
     const openNav=()=>{
@@ -16,7 +18,7 @@ export default function Navbar() {
             <div className="cursor-pointer">
               <Logo/>
             </div>
-            <ul className="md:flex hidden items-center text-[#322460] text-[16px] font-semibold gap-[20px]">
+            <ul className="md:flex hidden items-center text-navBlack text-[16px] font-semibold gap-[20px]">
               <li>
                 <a href="">NASIL ÇALIŞILIR</a>
               </li>
@@ -52,7 +54,7 @@ export default function Navbar() {
             <div className="flex justify-end p-8 xs:p-4">
               <IoClose onClick={openNav} size={30} className="cursor-pointer" />
             </div>
-            <ul className="flex flex-col h-screen pb-20 justify-center   items-center text-[#322460] text-[14px] font-semibold gap-[20px]">
+            <ul className="flex flex-col h-screen pb-20 justify-center   items-center text-navBlack text-[14px] font-semibold gap-[20px]">
             <li>
                 <a href="">NASIL ÇALIŞILIR</a>
               </li>
@@ -69,20 +71,21 @@ export default function Navbar() {
                 <a href="" className=''>TESTLER</a>
                 <span className="rounded-lg text-xs mt-3 px-1 bg-[#e8E9FD]">Yeni</span>
               </li>
-              <button className="text-[#322460] py-[13px] px-[26px] font-bold text-[1rem]">GİRİŞ YAP</button>
-              <button className="text-[#fff] rounded-[20px] bg-[#5636BE] py-[13px] px-[26px] hover:text-[#322460] transition-all text-[16px]">Hemen Kaydol</button>
+              <button className="text-navBlack py-[13px] px-[26px] font-bold text-[1rem]">GİRİŞ YAP</button>
+              <button className="text-[#fff] rounded-[20px] bg-[#5636BE] py-[13px] px-[26px] hover:bg-navBlack transition-all text-[16px]">Hemen Kaydol</button>
             </ul>
           </div>
            
           <div className="hidden md:flex gap-3 items-center">
-            <div className="flex ml-10 gap-2 bg-transparent text-[#322460] border-[#322460] border-[1px] rounded-[20px] py-[13px] px-[26px] items-center">
+            <div className="flex ml-10 gap-2 bg-transparent text-[#322460] border-navBlack border-[1px] rounded-[20px] py-[13px] px-[8px] items-center">
               <div className="flex items-center">
-                        SVG
+              <TfiWorld size={18} />
               </div>
               <span className="font-bold">TR</span>
+              <FaChevronDown className='cursor-pointer' />
             </div>
-            <button className="text-[#322460] py-[13px] px-[26px] font-bold text-[1rem]">GİRİŞ YAP</button>
-            <button className="text-[#fff] rounded-[20px] bg-[#5636BE] py-[13px] px-[26px] hover:text-[#322460] transition-all text-[16px]">Hemen Kaydol</button>
+            <button className="text-navBlack py-[13px] px-[26px] font-bold text-[1rem]">GİRİŞ YAP</button>
+            <button className="text-[#fff] rounded-[20px] bg-[#5636BE] py-[13px] px-[26px] hover:bg-navBlack transition-all text-[16px]">Hemen Kaydol</button>
           </div>
         </div>
       </div>

@@ -36,6 +36,10 @@ export default function Nutritionist() {
             spaceBetween: 20,
           },
         }}
+        navigation={{
+          prevEl: ".swiper-button-prev",
+          nextEl: ".swiper-button-next",
+        }}
         navigation={true}
         modules={[Navigation, FreeMode]}
         className="mySwiper"

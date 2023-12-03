@@ -40,7 +40,7 @@ export default function HowToUse() {
 
   return (
    <>
-    <div className="bg-white max-w-[1440px] mx-auto">
+    <div className="bg-white max-w-[1440px] xs:h-[1250px] mx-auto">
       <h3 className="text-[#6d42ef] leading-[34px] text-[24px] sm:text-[32px] p-20 md:text-left text-center sm:block flex justify-center sm:max-w-[1750px] mx-auto">
         Nasıl Kullanırım?
       </h3>

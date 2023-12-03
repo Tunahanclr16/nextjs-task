@@ -1,4 +1,5 @@
 import AboutUs from "./components/About/AboutUs";
+import Faq from "./components/Faq/Faq";
 import Hero from "./components/Hero/Hero";
 import HowToUse from "./components/HowToUse/HowToUse";
 import Slider from "./components/Slider/Slider";
@@ -16,6 +17,7 @@ export default function Home() {
       <div className="bg-gray-50 ">
       <Slider/>
       </div>
+      <Faq/>
     </div>
     )
 }

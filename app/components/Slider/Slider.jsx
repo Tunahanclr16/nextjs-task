@@ -37,7 +37,7 @@ export default function TabMenu() {
   };
 
   return (
-    <div className="mt-12 max-w-[1440px] mx-auto">
+    <div className="mt-12 max-w-[1200px] mx-auto">
       <h2 className="text-center pt-24 text-3xl font-semibold text-[30px]">
         İhtiyacına En Uygun Uzmanı Seç
       </h2>

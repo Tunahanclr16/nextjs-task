@@ -12,9 +12,10 @@ module.exports = {
         lg:"1200px",
         xs:"496px",
         sm:"800px",
+        xss:"330px"
       },
       colors:{
-        customGray: 'rgba(109, 66, 239, 0.08)', // Özel rengi tanımlayın
+        navBlack: '#322460', // Özel rengi tanımlayın
       }
     },
   },
