@@ -18,31 +18,30 @@ export default function Nutritionist() {
   return (
     <>
    <Swiper
-  slidesPerView={1}
-  spaceBetween={30}
-  rewind={true}
-  freeMode={true}
-  breakpoints={{
-    1071: {
-      slidesPerView: 4,
-      spaceBetween: 20,
-    },
-    640: {
-      slidesPerView: 2,
-      spaceBetween: 20,
-    },
-    600: {
-      slidesPerView: 1,
-      spaceBetween: 20,
-    },
-  }}
-  navigation={{
-    prevEl: ".swiper-button-prev",
-    nextEl: ".swiper-button-next",
-  }}
-  modules={[Navigation, FreeMode]}
-  className="mySwiper"
->
+        slidesPerView={1}
+        spaceBetween={30}
+        rewind={true}
+        freeMode={true}
+        breakpoints={{
+          1071: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+          },
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          600:{
+            slidesPerView: 1,
+            spaceBetween: 20,
+          }
+        }}
+        navigation={
+          true
+        }
+        modules={[Navigation,FreeMode]}
+                className="mySwiper"
+      >
         <SwiperSlide className="">
           <div className="flex mx-auto  mt-2 items-center justify-center">
             <div className="flex flex-col items-center rounded border-gray-50 shadow-lg w-[300px] xs:w-[350px] md:w-[400px]   h-full px-4 py-4 bg-white">
