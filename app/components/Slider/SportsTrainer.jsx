@@ -344,6 +344,7 @@ export default function SportsTrainer() {
                 src="https://api.hidoctor.health/assets/users/I1MhQGUuVmc5Tm1UaGRnUDlZTFU0RWljam9JUT09/IMG/1689749032870658.png"
                 width={150}
                 height={150}
+                alt=""
                 className="object-cover border-green-500 border-2 rounded-full"
               />
               <div className="mb-3 relative bottom-3 z-[5px] bg-green-100 w-20 rounded-full border border-green-500 py-1 text-xs font-semibold">

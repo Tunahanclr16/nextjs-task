@@ -1,21 +1,6 @@
 import Image from "next/image";
 
 const Footer = () => {
-  const categories = [
-    {
-      title: "Terappin",
-      links: [
-        "Link 1",
-        "Link 2",
-        "Link 3",
-        "Link 4",
-        "Link 5",
-        "Link 6",
-        "Link 7",
-      ],
-    },
-    // Diğer kategorileri buraya ekleyebilirsiniz
-  ];
 
   return (
     <footer className="bg-[#322460] py-10">
@@ -233,10 +218,10 @@ const Footer = () => {
               alt=""
               className="object-cover"
             />
-            <span className="text-[#fff] text-xs mt-2">Copyright © 2023
-</span>
-<span className="text-[#fff] text-xs mt-2">Terappin Teknoloji A.Ş. Tüm hakları saklıdır.
-</span>
+            <span className="text-[#fff] text-xs mt-2">Copyright © 2023</span>
+            <span className="text-[#fff] text-xs mt-2">
+              Terappin Teknoloji A.Ş. Tüm hakları saklıdır.
+            </span>
           </div>
         </div>
       </div>
@@ -254,8 +239,8 @@ const Footer = () => {
           <Image
             src="https://terappin.com/new-site/images/bitmap.png"
             alt=""
-            height={450}
             width={450}
+            height={450}
             className="object-cover"
           />
         </div>
