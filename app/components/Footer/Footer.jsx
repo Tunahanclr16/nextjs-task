@@ -4,7 +4,7 @@ const Footer = () => {
 
   return (
     <footer className="bg-[#322460] py-10">
-      <div className="max-w-[1650px] mt-24 overflow-hidden mx-auto grid grid-cols-1  xs:grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 p-3 sm:p-0 xs:gap-12 md:gap-24">
+      <div className="max-w-[1650px] mt-2 sm:mt-24   overflow-hidden mx-auto grid grid-cols-1  xs:grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 p-3 sm:p-0 xs:gap-12 md:gap-24">
         <div className="text-white">
           <h3 className="text-[21px] leading-7 font-bold tex-[#fff] mb-4">
             Terappin

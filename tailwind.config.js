@@ -15,7 +15,7 @@ module.exports = {
         xss:"330px"
       },
       colors:{
-        navBlack: '#322460', // Özel rengi tanımlayın
+        navBlack: '#322460', 
       }
     },
   },

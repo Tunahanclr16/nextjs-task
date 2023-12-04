@@ -4,38 +4,40 @@ import Image from "next/image";
 import image1 from "../../assets/HowToUse/image1.png";
 import image2 from "../../assets/HowToUse/image2.png";
 import image3 from "../../assets/HowToUse/image3.png";
+import ht1 from "../../assets/HowToUse/ht1.svg"
+import ht2 from "../../assets/HowToUse/ht2.svg"
+import ht3 from "../../assets/HowToUse/ht3.svg"
 
 export default function HowToUse() {
+    // Seçili menünün durumunu takip etmek için olusturdum
   const [selectedMenu, setSelectedMenu] = useState("image1");
 
+  // Menüye tıklanınca çağrılan fonksiyon
   const handleMenuClick = (menu) => {
     setSelectedMenu(menu);
   };
 
   const menuItems = [
     {
-      image:
-        "https://terapizone.com/_next/static/media/terapizonelogoWhite-svg.a5271de6.svg",
+      image: ht1, // ht1 SVG dosyasının yolunu buraya ekleyin
       title: "Terapistinizle Eşleşin",
       description:
         "Hangi konuda terapi almak istediğinizi belirleyin. Başvuru nedeninize özel olarak yardım edebilecek terapistlerimizin içinden, kendiniz için en uygun olanını ile eşleşin.",
     },
     {
-      image:
-        "https://terapizone.com/_next/static/media/calendarWhite-svg.9fe825d3.svg",
+      image: ht2,
       title: "Seans Oluşturun",
       description:
         "Terapi seansınız için en uygun tarih ve saati, seanslar sekmesinden kolayca seçerek oluşturun. Seansınıza 24 saat kalana kadar iptal edebilirsiniz.",
     },
     {
-      image:
-        "https://terapizone.com/_next/static/media/videoWhite-svg.6faca592.svg",
+      image: ht3, // ht3 SVG dosyasının yolunu buraya ekleyin
       title: "Görüşmeye Başlayın",
       description:
         "İstediğiniz yerden hemen terapistiniz ile sınırsız mesajlaşmaya ve online terapiye başlayın.",
     },
   ];
-
+  // Seçilen menü öğesini bulma
   const selectedItem = menuItems.find((item, index) => `image${index + 1}` === selectedMenu);
 
   return (

@@ -17,7 +17,7 @@ import SliderBtn from "@/app/ui/SliderBtn";
 export default function Nutritionist() {
   return (
     <>
-   <Swiper
+      <Swiper
         slidesPerView={1}
         spaceBetween={30}
         rewind={true}
@@ -31,16 +31,14 @@ export default function Nutritionist() {
             slidesPerView: 2,
             spaceBetween: 20,
           },
-          600:{
+          600: {
             slidesPerView: 1,
             spaceBetween: 20,
-          }
+          },
         }}
-        navigation={
-          true
-        }
-        modules={[Navigation,FreeMode]}
-                className="mySwiper"
+        navigation={true}
+        modules={[Navigation, FreeMode]}
+        className="mySwiper"
       >
         <SwiperSlide className="">
           <div className="flex mx-auto  mt-2 items-center justify-center">

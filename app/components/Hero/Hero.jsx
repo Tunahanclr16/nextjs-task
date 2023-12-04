@@ -12,7 +12,6 @@ export default function Hero() {
         <button className='text-white bg-[#2E224F]  font-bold mx-1 text-2xl py-4 w-60 text-center justify-center items-center mt-4  rounded-2xl hidden md:flex'>Hemen Başla</button>
       </div>
       <div className="relative h-full w-full md:w-auto md:h-auto">
-        {/* Resminizi buraya ekleyin */}
         <Image
           src="https://www.psikologofisi.com/assets/img/slider.webp"
           alt="Slider Image"

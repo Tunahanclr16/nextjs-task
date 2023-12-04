@@ -5,12 +5,12 @@ import Nutritionist from './Nutritionist';
 import SportsTrainer from './SportsTrainer';
 
 export default function TabMenu() {
-  const [selectedTab, setSelectedTab] = useState('Psikolog'); // Varsayılan seçili sekme
-
+  const [selectedTab, setSelectedTab] = useState('Psikolog'); 
+  // Sekme değiştince olan fonksiyon
   const handleClick = (tab) => {
     setSelectedTab(tab);
   };
-
+  // Seçilen sekme doğrultusunda içeriği render eden fonksiyon
   const renderContent = () => {
     switch (selectedTab) {
       case 'Psikolog':
@@ -35,7 +35,7 @@ export default function TabMenu() {
         return null;
     }
   };
-
+  // Ana render fonksiyonu
   return (
     <div className="mt-12 max-w-[1200px] mx-auto">
       <h2 className="text-center pt-24 text-3xl font-semibold text-[30px]">
@@ -63,6 +63,7 @@ export default function TabMenu() {
           </li>
         </ul>
       </div>
+            {/* Seçilen sekme içeriği */}
       <div className="mt-4">
         {renderContent()}
       </div>
