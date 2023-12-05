@@ -35,16 +35,16 @@ export default function GetSupport() {
 
 function SupportItem({ imageUrl, title, description }) {
   return (
-    <div className="flex items-center">
-      <div className="flex md:flex-col mx-auto flex-row items-center gap-4 xss:gap-1 xs:gap-2 sm:gap-0">
+    <div className="flex items-center ">
+      <div className="flex md:flex-col xs:pl-2 pl-4   mx-auto flex-row items-center gap-2 xss:gap-1 xs:gap-2 sm:gap-0">
         <Image
           src={imageUrl}
           alt="Support Item"
-          className="object-cover  flex items-center"
+          className="object-cover  w-[52px]    flex items-center"
         />
-        <div className="flex flex-col xss:mx-auto xss:items-center xss:text-center">
+        <div className="flex flex-col xss:mx-auto  xss:items-center xss:text-center">
           <h3 className="text-#25165e w-[320px] font-medium text-sm xss:text-base xs:text-lg leading-6 mt-5">{title}</h3>
-          <p className="mt-2 text-[#5b677d] w-[250px] xss:w-[300px] text-[12px] xss:text-[14px] xs:text-[16px] leading-6">{description}</p>
+          <p className="mt-2 text-[#5b677d] w-[250px]  xss:w-[300px] text-[12px] xss:text-[14px] xs:text-[16px] leading-6">{description}</p>
         </div>
       </div>
     </div>

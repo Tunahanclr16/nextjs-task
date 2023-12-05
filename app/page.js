@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <div >
       <Hero/>
-      <div className=" h-[1000px] xs:h-[100%] sm:h-[900px] md:h-[800px]">
+      <div className=" sm:-mt-0 -mt-7 h-[820px] xs:h-[1050px] sm:h-[900px] md:h-[800px]">
       <HowToUse/>
       </div>
       <AboutUs/>

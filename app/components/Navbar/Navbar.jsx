@@ -4,12 +4,27 @@ import { FaBars } from "react-icons/fa";
 import { IoClose } from "react-icons/io5";
 import { TfiWorld } from "react-icons/tfi";
 import { useState } from 'react';
-import { FaChevronDown } from "react-icons/fa";
+import { FiChevronDown, FiChevronUp } from 'react-icons/fi';
 export default function Navbar() {
-    const [nav,setNav]=useState(false)
-    const openNav=()=>{
-        setNav(!nav)
-    }
+  const [nav, setNav] = useState(false);
+  const [selectedLanguage, setSelectedLanguage] = useState('TR');
+  const [isEngSelected, setIsEngSelected] = useState(false);
+
+  const openNav = () => {
+    setNav(!nav);
+  };
+
+  const selectLanguage = (language) => {
+    setSelectedLanguage(language);
+    setIsEngSelected(language === 'ENG');
+  };
+
+  const languageOptions = [
+    { label: 'TR', value: 'Turkish' },
+    { label: 'ENG', value: 'English' },
+    { label: 'DE', value: 'German' },
+  ];
+
   return (
     <div className='bg-[#ABAAF3]'>
       <div className="my-[28px] p-4">
@@ -77,13 +92,30 @@ export default function Navbar() {
           </div>
            
           <div className="hidden md:flex gap-3 items-center">
-            <div className="flex ml-10 gap-2 bg-transparent text-[#322460] border-navBlack border-[1px] rounded-[20px] py-[13px] px-[8px] items-center">
-              <div className="flex items-center">
-              <TfiWorld size={18} />
+          <div
+              className={`bg-transparent text-[#322460] border-navBlack border-[1px] rounded-[20px] px-[30px] py-[13px] cursor-pointer`}
+              onClick={() => selectLanguage(isEngSelected ? 'TR' : 'ENG')}
+            >
+              <div className="flex gap-2 items-center">
+                <TfiWorld size={20} />
+                <span className="font-bold text-lg">{isEngSelected ? 'ENG' : 'TR'}</span>
+                {isEngSelected ? <FiChevronUp className="absolute top-3 right-3" /> : <FiChevronDown className="absolute top-3 right-3" />}
               </div>
-              <span className="font-bold">TR</span>
-              <FaChevronDown className='cursor-pointer' />
-            </div>
+              <div className={`absolute top-full left-0 mt-2 bg-white p-2 w-[120px] border border-gray-200 rounded transition-all duration-300 ${isEngSelected ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}>
+                {languageOptions.map((option) => (
+                  <button
+                    key={option.label}
+                    onClick={() => {
+                      setSelectedLanguage(option.label);
+                      setIsEngSelected(option.label === 'ENG');
+                    }}
+                    className={`block w-full text-left py-1 px-2 text-[#322460] ${selectedLanguage === option.label ? 'font-semibold' : ''}`}
+                  >
+                    {option.value}
+                  </button>
+                ))}
+              </div>
+              </div>
             <button className="text-navBlack py-[13px] px-[26px] font-bold text-[1rem]">GİRİŞ YAP</button>
             <button className="text-[#fff] rounded-[20px] bg-[#5636BE] py-[13px] px-[26px] hover:bg-navBlack transition-all text-[16px]">Hemen Kaydol</button>
           </div>

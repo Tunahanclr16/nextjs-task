@@ -42,26 +42,26 @@ export default function HowToUse() {
 
   return (
    <>
-    <div className="bg-white max-w-[1440px] xs:h-[1250px] mx-auto">
+    <div className="bg-white max-w-[1440px] xs:h-[1250px]  mx-auto">
       <h3 className="text-[#6d42ef] leading-[34px] text-[24px] sm:text-[32px] p-20 md:text-left text-center sm:block flex justify-center sm:max-w-[1750px] mx-auto">
         Nasıl Kullanırım?
       </h3>
-      <div className="flex flex-col sm:flex-row justify-between items-center md:h-[749px] max-w-[1440px] mx-auto pb-[300px]">
+      <div className="flex flex-col sm:flex-row justify-between items-center  md:h-[749px] max-w-[1440px] mx-auto pb-[300px]">
         <div className="sm:flex-col md:mt-32 gap-4 flex">
-          <div className="flex sm:flex-col items-center justify-center md:p-12 rounded-lg">
+          <div className="flex sm:flex-col  items-center justify-center sm:h-[500px] h-[0px] md:p-12 rounded-lg">
             {menuItems.map((item, index) => (
               <div
                 key={index}
                 onClick={() => handleMenuClick(`image${index + 1}`)}
-                className={`flex items-center rounded-[16px] justify-center h-[176px] w-[100px] sm:w-[500px] p-4 mb-5 cursor-pointer ${selectedMenu === `image${index + 1}` ? "bg-[#6d42ef14]" : ""}`}
+                className={`flex items-center rounded-[16px] justify-center h-[76px] sm:h-[176px] w-[100px] sm:w-[500px] p-4 mb-5 cursor-pointer ${selectedMenu === `image${index + 1}` ? "bg-[#6d42ef14]" : ""}`}
               >
-                <div className={`flex gap-4 mb-7 items-center mx-auto h-12 rounded-full w-12 ${selectedMenu === `image${index + 1}` ? "bg-blue-500" : "bg-[#6d42ef14]"}`}>
+                <div className={`flex gap-4  items-center mx-auto h-12   rounded-full w-12 ${selectedMenu === `image${index + 1}` ? "bg-blue-500" : "bg-[#6d42ef14]"}`}>
                   <Image
                     src={item.image}
                     width={40}
                     height={40}
                     alt="Logo"
-                    className={`object-cover mx-auto w-6 ${selectedMenu === `image${index + 1}` ? "" : "filter brightness-50"}`}
+                    className={`object-cover   mx-auto  w-6 ${selectedMenu === `image${index + 1}` ? "" : "filter brightness-50"}`}
                   />
                 </div>
                 <div className="flex flex-col justify-center">
@@ -78,7 +78,7 @@ export default function HowToUse() {
           </div>
         </div>
         {/* Seçilen menüye göre gösterilecek resim ve description */}
-        <div className="mt-10 md:mt-0 md:ml-10">
+        <div className="mt-10 md:mt-0 flex md:ml-10">
           <div className="relative">
           {selectedMenu === "image1" && (
           <Image
@@ -112,7 +112,6 @@ export default function HowToUse() {
             </div>
           </div>
         </div>
-        
       </div>
     </div>
 

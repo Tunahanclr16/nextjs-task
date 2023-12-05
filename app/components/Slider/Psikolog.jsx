@@ -266,7 +266,7 @@ export default function Psikolog() {
         </SwiperSlide>
         <SwiperSlide className="">
           <div className="flex mx-auto  mt-2 items-center justify-center">
-            <div className="flex flex-col items-center rounded border-gray-50 shadow-lg w-[300px] xs:w-[350px] md:w-[400px]   h-full px-4 py-4 bg-white">
+            <div className="flex flex-col items-center rounded  border-gray-50 shadow-lg w-[300px] xs:w-[350px]  md:w-[400px]   h-full px-4 py-4 bg-white">
               <Image
                 src="https://api.hidoctor.health/assets/users/I1MhQGUuVmc5Tm1UaGRnUDlZTFU0RWljam9JUT09/IMG/1689749032870658.png"
                 width={150}
