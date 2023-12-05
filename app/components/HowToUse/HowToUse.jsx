@@ -48,24 +48,24 @@ export default function HowToUse() {
       </h3>
       <div className="flex flex-col sm:flex-row justify-between items-center  md:h-[749px] max-w-[1440px] mx-auto pb-[300px]">
         <div className="sm:flex-col md:mt-32 gap-4 flex">
-          <div className="flex sm:flex-col  items-center justify-center sm:h-[500px] h-[0px] md:p-12 rounded-lg">
+          <div className="flex sm:flex-col  items-center justify-center  sm:h-[500px] h-[0px] md:p-12 rounded-lg">
             {menuItems.map((item, index) => (
               <div
                 key={index}
                 onClick={() => handleMenuClick(`image${index + 1}`)}
                 className={`flex items-center rounded-[16px] justify-center h-[76px] sm:h-[176px] w-[100px] sm:w-[500px] p-4 mb-5 cursor-pointer ${selectedMenu === `image${index + 1}` ? "bg-[#6d42ef14]" : ""}`}
               >
-                <div className={`flex gap-4  items-center mx-auto h-12   rounded-full w-12 ${selectedMenu === `image${index + 1}` ? "bg-blue-500" : "bg-[#6d42ef14]"}`}>
+                <div className={`flex gap-4  items-center mx-auto h-12    rounded-full w-12 ${selectedMenu === `image${index + 1}` ? "bg-blue-500" : "bg-[#6d42ef14]"}`}>
                   <Image
                     src={item.image}
                     width={40}
                     height={40}
                     alt="Logo"
-                    className={`object-cover   mx-auto  w-6 ${selectedMenu === `image${index + 1}` ? "" : "filter brightness-50"}`}
+                    className={`object-cover   mx-auto flex justify-center items-center  w-6 ${selectedMenu === `image${index + 1}` ? "" : "filter brightness-50"}`}
                   />
                 </div>
                 <div className="flex flex-col justify-center">
-                  <h3 className="sm:flex hidden xs:text-[12px] leading-4 sm:leading-[32px] text-[#6d42ef] font-normal items-center ml-4 mt-12">
+                  <h3 className="sm:flex hidden  xs:text-[14px] leading-4 sm:leading-[32px] text-[#6d42ef] font-normal items-center ml-4 mt-12">
                     {item.title}
                   </h3>
                   {/* Image'a tıklanınca görünecek description */}

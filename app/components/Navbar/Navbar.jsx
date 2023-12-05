@@ -99,7 +99,7 @@ export default function Navbar() {
               <div className="flex gap-2 items-center">
                 <TfiWorld size={20} />
                 <span className="font-bold text-lg">{isEngSelected ? 'ENG' : 'TR'}</span>
-                {isEngSelected ? <FiChevronUp className="absolute top-3 right-3" /> : <FiChevronDown className="absolute top-3 right-3" />}
+                {isEngSelected ? <FiChevronUp  className="" /> : <FiChevronDown className="" />}
               </div>
               <div className={`absolute top-full left-0 mt-2 bg-white p-2 w-[120px] border border-gray-200 rounded transition-all duration-300 ${isEngSelected ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}>
                 {languageOptions.map((option) => (

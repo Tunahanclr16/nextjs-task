@@ -8,10 +8,11 @@ module.exports = {
   theme: {
     extend: {
       screens:{
-        md:"1137px",
+        md:"1156px",
         lg:"1200px",
         xs:"496px",
         sm:"800px",
+        smm:"1060px", //slider nokta koyma için koydum
         xsss:"370px",
         xss:"330px"
       },

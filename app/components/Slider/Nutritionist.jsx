@@ -50,6 +50,8 @@ export default function Nutritionist() {
                 alt=""
                 className="object-cover border-green-500 border-2 rounded-full"
               />
+              <div className="z-0 hidden smm:left-[185px] md:left-52 -ml-4 mt-3 absolute smm:flex h-4 w-4 self-start rounded-full md:mt-5 border-[3px]  border-white bg-green-500"></div>
+
               <div className="mb-3 relative bottom-3 z-[5px] bg-green-100 w-20 rounded-full border border-green-500 py-1 text-xs font-semibold">
                 <p className="text-center ">Çevrim içi</p>
               </div>
@@ -124,6 +126,8 @@ export default function Nutritionist() {
                 alt=""
                 className="object-cover border-green-500 border-2 rounded-full"
               />
+              <div className="z-0 hidden smm:left-[185px] md:left-52 -ml-4 mt-3 absolute smm:flex h-4 w-4 self-start rounded-full md:mt-5 border-[3px]  border-white bg-green-500"></div>
+
               <div className="mb-3 relative bottom-3 z-[5px] bg-green-100 w-20 rounded-full border border-green-500 py-1 text-xs font-semibold">
                 <p className="text-center ">Çevrim içi</p>
               </div>
@@ -198,6 +202,8 @@ export default function Nutritionist() {
                 alt=""
                 className="object-cover border-green-500 border-2 rounded-full"
               />
+              <div className="z-0 hidden smm:left-[185px] md:left-52 -ml-4 mt-3 absolute smm:flex h-4 w-4 self-start rounded-full md:mt-5 border-[3px]  border-white bg-green-500"></div>
+
               <div className="mb-3 relative bottom-3 z-[5px] bg-green-100 w-20 rounded-full border border-green-500 py-1 text-xs font-semibold">
                 <p className="text-center ">Çevrim içi</p>
               </div>
@@ -272,6 +278,8 @@ export default function Nutritionist() {
                 alt=""
                 className="object-cover border-green-500 border-2 rounded-full"
               />
+              <div className="z-0 hidden smm:left-[185px] md:left-52 -ml-4 mt-3 absolute smm:flex h-4 w-4 self-start rounded-full md:mt-5 border-[3px]  border-white bg-green-500"></div>
+
               <div className="mb-3 relative bottom-3 z-[5px] bg-green-100 w-20 rounded-full border border-green-500 py-1 text-xs font-semibold">
                 <p className="text-center ">Çevrim içi</p>
               </div>
@@ -346,6 +354,8 @@ export default function Nutritionist() {
                 alt=""
                 className="object-cover border-green-500 border-2 rounded-full"
               />
+              <div className="z-0 hidden smm:left-[185px] md:left-52 -ml-4 mt-3 absolute smm:flex h-4 w-4 self-start rounded-full md:mt-5 border-[3px]  border-white bg-green-500"></div>
+
               <div className="mb-3 relative bottom-3 z-[5px] bg-green-100 w-20 rounded-full border border-green-500 py-1 text-xs font-semibold">
                 <p className="text-center ">Çevrim içi</p>
               </div>
@@ -420,6 +430,8 @@ export default function Nutritionist() {
                 alt=""
                 className="object-cover border-green-500 border-2 rounded-full"
               />
+              <div className="z-0 hidden smm:left-[185px] md:left-52 -ml-4 mt-3 absolute smm:flex h-4 w-4 self-start rounded-full md:mt-5 border-[3px]  border-white bg-green-500"></div>
+
               <div className="mb-3 relative bottom-3 z-[5px] bg-green-100 w-20 rounded-full border border-green-500 py-1 text-xs font-semibold">
                 <p className="text-center ">Çevrim içi</p>
               </div>
@@ -494,6 +506,8 @@ export default function Nutritionist() {
                 alt=""
                 className="object-cover border-green-500 border-2 rounded-full"
               />
+              <div className="z-0 hidden smm:left-[185px] md:left-52 -ml-4 mt-3 absolute smm:flex h-4 w-4 self-start rounded-full md:mt-5 border-[3px]  border-white bg-green-500"></div>
+
               <div className="mb-3 relative bottom-3 z-[5px] bg-green-100 w-20 rounded-full border border-green-500 py-1 text-xs font-semibold">
                 <p className="text-center ">Çevrim içi</p>
               </div>
