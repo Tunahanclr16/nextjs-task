@@ -46,7 +46,7 @@ export default function HowToUse() {
       <h3 className="text-[#6d42ef] leading-[34px] text-[24px] sm:text-[32px] p-20 md:text-left text-center sm:block flex justify-center sm:max-w-[1750px] mx-auto">
         Nasıl Kullanırım?
       </h3>
-      <div className="flex flex-col sm:flex-row justify-between items-center  md:h-[749px] max-w-[1440px] mx-auto pb-[300px]">
+      <div className="flex flex-col sm:flex-row justify-between items-center  md:h-[680px] max-w-[1440px] mx-auto pb-[300px]">
         <div className="sm:flex-col md:mt-32 gap-4 flex">
           <div className="flex sm:flex-col  items-center justify-center  sm:h-[500px] h-[0px] md:p-12 rounded-lg">
             {menuItems.map((item, index) => (
@@ -61,7 +61,7 @@ export default function HowToUse() {
                     width={40}
                     height={40}
                     alt="Logo"
-                    className={`object-cover   mx-auto flex justify-center items-center  w-6 ${selectedMenu === `image${index + 1}` ? "" : "filter brightness-50"}`}
+                    className={`object-cover   mx-auto flex justify-center items-center mr-2 w-6 ${selectedMenu === `image${index + 1}` ? "" : "filter brightness-50"}`}
                   />
                 </div>
                 <div className="flex flex-col justify-center">

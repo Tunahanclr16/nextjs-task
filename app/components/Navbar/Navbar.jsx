@@ -5,6 +5,7 @@ import { IoClose } from "react-icons/io5";
 import { TfiWorld } from "react-icons/tfi";
 import { useState } from 'react';
 import { FiChevronDown, FiChevronUp } from 'react-icons/fi';
+
 export default function Navbar() {
   const [nav, setNav] = useState(false);
   const [selectedLanguage, setSelectedLanguage] = useState('TR');
@@ -22,7 +23,6 @@ export default function Navbar() {
   const languageOptions = [
     { label: 'TR', value: 'Turkish' },
     { label: 'ENG', value: 'English' },
-    { label: 'DE', value: 'German' },
   ];
 
   return (
