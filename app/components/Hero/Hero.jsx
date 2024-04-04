@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import slider from "../../assets/slider.png"
 
 export default function Hero() {
   return (
@@ -13,7 +14,7 @@ export default function Hero() {
       </div>
       <div className="relative h-full w-full md:w-auto md:h-auto">
         <Image
-          src="https://www.psikologofisi.com/assets/img/slider.webp"
+          src={slider}
           alt="Slider Image"
           width={1200}
           height={1200}
